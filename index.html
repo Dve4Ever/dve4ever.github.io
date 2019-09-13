@@ -16,7 +16,7 @@
       <link rel="stylesheet" href="css/aos.css">
       <?php
          if($_POST["submit"]) {
-             $recipient="your@email.address";
+             $recipient="dev4ever27@gmail.com";
              $subject="Form to email message";
              $sender=$_POST["sender"];
              $senderEmail=$_POST["senderEmail"];
@@ -93,16 +93,19 @@
                         <h2>Contact Us</h2>
                         <form method="post" action="contact.php">
                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Name">
+                              <label>Name:</label>
+                              <input name="sender">
                            </div>
                            <div class="form-group">
-                              <input type="email" class="form-control" placeholder="Email">
+                              <label>Email address:</label>
+                              <input name="senderEmail">
                            </div>
                            <div class="form-group">
-                              <textarea name="" class="form-control" id="" cols="30" rows="5" placeholder="Message"></textarea>
+                              <label>Message:</label>
+                              <textarea rows="5" cols="20" name="message"></textarea>                           
                            </div>
                            <div class="form-group">
-                              <input type="submit" value="Send Message" class="btn btn-primary px-5">
+                              <input type="submit" name="submit">
                            </div>
                         </form>
                      </div>
