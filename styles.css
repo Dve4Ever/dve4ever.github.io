@@ -93,7 +93,6 @@ p, ul, ol, dl, table {
     margin: 0 0 24px;
 }
     ul, ol, dl {
-        margin-left: 24px;
     }
         ul li, ol li {
             list-style-type: disc;
@@ -198,7 +197,7 @@ table tfoot th {
     text-align: right;
 }
     table tfoot tr:first-child th {
-        text-align: left;
+        text-align: ;
     }
 table tfoot td {
     font-size: 11px;
@@ -274,7 +273,6 @@ table tfoot tr:first-child td {
 #github span {
     background-color: #DDD;
     font-size: 14px;
-    left: 0;
     padding: 5px 0;
     position: absolute;
     text-align: center;
