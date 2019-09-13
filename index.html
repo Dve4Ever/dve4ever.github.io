@@ -14,6 +14,22 @@
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
       <link rel="stylesheet" href="css/aos.css">
+      <?php
+         if($_POST["submit"]) {
+             $recipient="your@email.address";
+             $subject="Form to email message";
+             $sender=$_POST["sender"];
+             $senderEmail=$_POST["senderEmail"];
+             $message=$_POST["message"];
+         
+             $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+         
+             mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+         
+             $thankYou="<p>Thank you! Your message has been sent.</p>";
+         }
+         
+         ?>
       <!-- MAIN CSS -->
       <link rel="stylesheet" href="css/style.css">
    </head>
@@ -75,7 +91,7 @@
                   <div class="col-md-6">
                      <div class="quick-contact-form bg-white">
                         <h2>Contact Us</h2>
-			<form method="post" action="contactengine.php">
+                        <form method="post" action="contact.php">
                            <div class="form-group">
                               <input type="text" class="form-control" placeholder="Name">
                            </div>
