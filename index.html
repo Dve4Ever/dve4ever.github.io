@@ -15,29 +15,6 @@
       <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
       <link rel="stylesheet" href="css/aos.css">
       <!-- PHP -->
-      <?php
-       // from the form
-       $name = trim(strip_tags($_POST['name']));
-       $email = trim(strip_tags($_POST['email']));
-       $message = htmlentities($_POST['message']);
-
-       // set here
-       $subject = "Contact form submitted!";
-       $to = 'dev4ever27@gmail.com';
-
-       $body = <<<HTML
-$message
-HTML;
-
-       $headers = "From: $email\r\n";
-       $headers .= "Content-type: text/html\r\n";
-
-       // send the email
-       mail($to, $subject, $body, $headers);
-
-       // redirect afterwords, if needed
-       header('Location: thanks.html');
-?>
       <!-- MAIN CSS -->
       <link rel="stylesheet" href="css/style.css">
    </head>
@@ -99,7 +76,7 @@ HTML;
                   <div class="col-md-6">
                      <div class="quick-contact-form bg-white">
                         <h2>Contact Us</h2>
-			<form method="post">
+                        <form action="" method="post">
                            <div class="form-group">
                               <input type="text" name="name" id="name" class="form-control" placeholder="Name">
                            </div>
@@ -113,6 +90,29 @@ HTML;
                               <input type="submit" name="submit" value="Send Message" class="btn btn-primary px-5">
                            </div>
                         </form>
+                        <?php
+                           // from the form
+                           $name = trim(strip_tags($_POST['name']));
+                           $email = trim(strip_tags($_POST['email']));
+                           $message = htmlentities($_POST['message']);
+                           
+                           // set here
+                           $subject = "Contact form submitted!";
+                           $to = 'dev4ever27@gmail.com';
+                           
+                           $body = <<<HTML
+                           $message
+                           HTML;
+                           
+                           $headers = "From: $email\r\n";
+                           $headers .= "Content-type: text/html\r\n";
+                           
+                           // send the email
+                           mail($to, $subject, $body, $headers);
+                           
+                           // redirect afterwords, if needed
+                           header('Location: thanks.html');
+                           ?>
                      </div>
                   </div>
                </div>
