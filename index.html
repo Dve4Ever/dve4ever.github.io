@@ -14,22 +14,30 @@
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
       <link rel="stylesheet" href="css/aos.css">
+      <!-- PHP -->
       <?php
-         if($_POST["submit"]) {
-             $recipient="dev4ever27@gmail.com";
-             $subject="Form to email message";
-             $sender=$_POST["sender"];
-             $senderEmail=$_POST["senderEmail"];
-             $message=$_POST["message"];
-         
-             $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
-         
-             mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-         
-             $thankYou="<p>Thank you! Your message has been sent.</p>";
-         }
-         
-         ?>
+       // from the form
+       $name = trim(strip_tags($_POST['name']));
+       $email = trim(strip_tags($_POST['email']));
+       $message = htmlentities($_POST['message']);
+
+       // set here
+       $subject = "Contact form submitted!";
+       $to = 'your@email.com';
+
+       $body = <<<HTML
+$message
+HTML;
+
+       $headers = "From: $email\r\n";
+       $headers .= "Content-type: text/html\r\n";
+
+       // send the email
+       mail($to, $subject, $body, $headers);
+
+       // redirect afterwords, if needed
+       header('Location: thanks.html');
+?>
       <!-- MAIN CSS -->
       <link rel="stylesheet" href="css/style.css">
    </head>
@@ -91,21 +99,18 @@
                   <div class="col-md-6">
                      <div class="quick-contact-form bg-white">
                         <h2>Contact Us</h2>
-                        <form method="post" action="contact.php">
+			<form method="post" action="contactengine.php">
                            <div class="form-group">
-                              <label>Name:</label>
-                              <input name="sender">
+                              <input type="text" name="name" id="name" class="form-control" placeholder="Name">
                            </div>
                            <div class="form-group">
-                              <label>Email address:</label>
-                              <input name="senderEmail">
+                              <input type="email" name="email" id="email" class="form-control" placeholder="Email">
                            </div>
                            <div class="form-group">
-                              <label>Message:</label>
-                              <textarea rows="5" cols="20" name="message"></textarea>                           
+                              <textarea name="message" class="form-control" id="message" cols="30" rows="5" placeholder="Message"></textarea>
                            </div>
                            <div class="form-group">
-                              <input type="submit" name="submit">
+                              <input type="submit" name="submit" value="Send Message" class="btn btn-primary px-5">
                            </div>
                         </form>
                      </div>
