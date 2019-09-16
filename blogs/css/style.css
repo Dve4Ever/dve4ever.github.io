@@ -1775,3 +1775,44 @@ form .btn {
   .project-item:hover .project-item-overlay {
     opacity: 1;
     visibility: visible; }
+
+.ftco-background-9 {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+  .ftco-cover-1 > .container {
+    position: relative; }
+  .ftco-cover-1.overlay {
+    position: relative; }
+    .ftco-cover-1.overlay:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: .5;
+      background: #000; }
+    .ftco-cover-1.overlay h1 {
+      color: #fff;
+      font-size: 3rem;
+      font-weight: 900; }
+      .ftco-cover-1.overlay h1.line-bottom {
+        position: relative;
+        padding-bottom: 30px; }
+        .ftco-cover-1.overlay h1.line-bottom:after {
+          content: "";
+          background: #fb7400;
+          position: absolute;
+          bottom: 0;
+          width: 40px;
+          height: 7px;
+          left: 0; }
+    .ftco-cover-1.overlay p {
+      color: #fff; }
+      .ftco-cover-1.overlay p a {
+        color: #fff;
+        text-decoration: underline;
+        font-weight: 700; }
+        .ftco-cover-1.overlay p a:hover {
+          text-decoration: none; }
