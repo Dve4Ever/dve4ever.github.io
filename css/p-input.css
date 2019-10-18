@@ -46,7 +46,7 @@ input:focus, input:valid {
   background-position: 0 0;
 }
 input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
-  color: #120a21;
+  color: #FFFFF;
   font-size: 11px;
   transform: translateY(-20px);
   visibility: visible !important;
