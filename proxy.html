@@ -49,8 +49,12 @@
          <link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
       </div>
       <script>
-         document.getElementById("urlSearch").action = "https://mun." + document.domain + "/get";
-     </script>
-     <script>document.getElementById("movie").href = "https://mun." + document.domain + "/get?url=http://yesmovies.fm"</script>
+         function getInputValue(){
+             // Selecting the input element and get its value 
+             var inputVal = "http://devoooo-proxy.herokuapp.com/proxy/" + document.getElementById("myInput").value ;
+             // Displaying the value
+             window.open(inputVal)
+         }
+      </script>
    </body>
 </html>
