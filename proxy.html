@@ -19,41 +19,38 @@
    <body>
       <div class="topFixedBar" style="vertical-align:top;">
          <div align="left">
-            <a href="/" class="leftText">MrDevoooo</a>
+            <a href="/" class="leftText">MikeLime</a>
          </div>
          <div align="right">
-            <a href="/proxy.html" class="button1">Proxy</a>
-            <a href="/blog.html" class="button1">Blog</a>
-            <a href="/games.html" class="button1">Games</a>
-            <a href="/home.html" class="button1">Home</a>
+            <a href="/selection.html" class="button1">Surf Freely</a>
+            <a href="/gs.html" class="button1">Play Games</a>
+            <a id="movie" class="button1">Watch Movies</a>
+            <a id="movie" class="button1">Chatbox</a>
             <div class="dropdown" style="text-align:center !important;">
                <button class="dropbtn" style="margin-left:7%;">MikeLime
-               <i class="fa fa-caret-down"></i>
+                  <i class="fa fa-caret-down"></i>
                </button>
                <div class="dropdown-content">
-                  <a href="/proxy.html">Proxy</a>
-                  <a href="/blog.html">Blog</a>
-                  <a href="/games.html">Games</a>
-                  <a href="/home.html">Home</a>
+                  <a href="/selection.html">Surf Freely</a>
+                  <a href="/games.html">Play Games</a>
+                  <a href="/movies.html">Watch Movies</a>
+                  <a href="/chatbox.html">Chatbox</a>
                </div>
             </div>
          </div>
       </div>
       <div style="margin-top:100px; text-align:center;">
-         <h1>D.V.E Proxy</h1>
-         <input type="text" class="form-control" placeholder="Enter URL..." id="myInput">
-         <button type="button" style='text-align:center;' onclick="getInputValue();">Submit</button>
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+         <form id="urlSearch" method='GET' onsubmit=''>
+            <h1>Luna Proxy</h1>
+            <input placeholder="Enter URL" type="text" name='url' id="url" required="">
+            <button style='text-align:center;'>Submit</button>
+         </form>
+         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
          <link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
       </div>
       <script>
-         function getInputValue(){
-             // Selecting the input element and get its value 
-             var inputVal = "http://devoooo-proxy.herokuapp.com/proxy/" + document.getElementById("myInput").value ;
-             
-             // Displaying the value
-             window.open(inputVal)
-         }
-      </script>
+         document.getElementById("urlSearch").action = "https://mun." + document.domain + "/get";
+     </script>
+     <script>document.getElementById("movie").href = "https://mun." + document.domain + "/get?url=http://yesmovies.fm"</script>
    </body>
 </html>
