@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html>
    <head>
@@ -42,7 +41,16 @@
          </div>
       </div>
       <div style="margin-top:100px; text-align:center;">
-            <h1>Muun Proxy</h1>
-<iframe src="https://muun.ml/" height="600" width="800">
+         <form id="urlSearch" method='GET' onsubmit='goToPage();'>
+            <h1>Devoooo Proxy</h1>
+            <input placeholder="Enter URL" type="text" name='url' id="url" required="">
+            <button style='text-align:center;'>Submit</button>
+         </form>
+         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+         <link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
+      </div>
+      <script>
+         document.getElementById("urlSearch").action = "http://devoooo-proxy.herokuapp.com/proxy/" + document.domain ;
+     </script>
    </body>
 </html>
