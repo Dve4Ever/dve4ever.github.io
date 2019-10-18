@@ -28,29 +28,30 @@
             <div class="dropdown" style="text-align:center !important;">
                <a href="/index.html">
                <button class="dropbtn" style="margin-left:7%;">MrDevoooo
-                  <i class="fa fa-caret-down"></i>
+               <i class="fa fa-caret-down"></i>
                </button>
                </a>
                <div class="dropdown-content">
-                 <a href="#" class="button1">Proxy</a>
-                 <a href="/games.html" class="button1">Play Games</a>
-                 <a href="/blog.html" class="button1">Blog</a>
-                 <a dref="/index.html" class="button1">Chatbox</a>
+                  <a href="#" class="button1">Proxy</a>
+                  <a href="/games.html" class="button1">Play Games</a>
+                  <a href="/blog.html" class="button1">Blog</a>
+                  <a dref="/index.html" class="button1">Chatbox</a>
                </div>
             </div>
          </div>
       </div>
       <div style="margin-top:100px; text-align:center;">
-         <form id="urlSearch" method='GET' onsubmit='goToPage();'>
-            <h1>Devoooo Proxy</h1>
-            <input placeholder="Enter URL" type="text" name='url' id="url" required="">
-            <button style='text-align:center;'>Submit</button>
-         </form>
-         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-         <link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
-      </div>
+      <h1>Devoooo Proxy</h1>
+      <input type="text" placeholder="Type something..." id="myInput">
+      <button type="button" onclick="getInputValue();">Get Value</button>
       <script>
-         document.getElementById("urlSearch").action = "http://devoooo-proxy.herokuapp.com/proxy/" + document.getElementById("url").value ;
-     </script>
+         function getInputValue(){
+             // Selecting the input element and get its value 
+             var inputVal = "http://devoooo-proxy.herokuapp.com/proxy/" + document.getElementById("myInput").value ;
+             
+             // Displaying the value
+             alert(inputVal);
+         }
+      </script>
    </body>
 </html>
