@@ -641,8 +641,10 @@ h1, h2, h3, h4, h5,
       position: relative;
       display: block; }
       .site-mobile-menu .site-nav-wrap li .nav-link.active {
+        font-weight:bold;
         color: #fb7400; }
       .site-mobile-menu .site-nav-wrap li.active > a {
+        font-weight:bold;
         color: #fb7400; }
     .site-mobile-menu .site-nav-wrap .arrow-collapse {
       position: absolute;
@@ -724,6 +726,7 @@ h1, h2, h3, h4, h5,
     .sticky-wrapper .site-navbar ul li a {
       color: rgba(255, 255, 255, 0.7) !important; }
       .sticky-wrapper .site-navbar ul li a.active {
+        font-weight:bold;
         color: #fff !important; }
   .sticky-wrapper.is-sticky .site-navbar {
     background: #fff;
@@ -734,6 +737,7 @@ h1, h2, h3, h4, h5,
     .sticky-wrapper.is-sticky .site-navbar ul li a {
       color: #000 !important; }
       .sticky-wrapper.is-sticky .site-navbar ul li a.active {
+        font-weight:bold;
         color: #fb7400 !important; }
   .sticky-wrapper .shrink {
     padding-top: 0px !important;
@@ -998,6 +1002,7 @@ h1, h2, h3, h4, h5,
       transition: 0.3s all cubic-bezier(0.32, 0.71, 0.53, 0.53);
       margin: 3px; }
     .block-13 .owl-dots .owl-dot.active span {
+      font-weight:bold;
       background: #fb7400; }
 
 .post-entry {
