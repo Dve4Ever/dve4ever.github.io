@@ -44,10 +44,9 @@ input:focus, input:valid {
   box-shadow: none;
   outline: none;
   background-position: 0 0;
-  color: #fffff;
 }
 input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
-  color: #FFFFF;
+  color: #120a21;
   font-size: 11px;
   transform: translateY(-20px);
   visibility: visible !important;
