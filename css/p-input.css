@@ -97,3 +97,11 @@ button:hover {
 body {
   overflow: hidden;
 }
+
+input, select, textarea{
+    color: #FFFFF;
+}
+
+textarea:focus, input:focus {
+    color: #FFFFF;
+}
