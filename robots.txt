@@ -34,3 +34,7 @@ User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
 Sitemap: https://dve4ever.github.io/sitemap.xml
+User-agent: *
+Allow: /
+Allow: /sitemap.htm
+Sitemap: http://dve4ever.github.io/sitemap.xml
