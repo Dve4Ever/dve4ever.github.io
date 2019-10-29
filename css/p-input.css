@@ -32,13 +32,13 @@ input {
   display: block;
   border: none;
   padding: 10px 0;
-  border-bottom: solid 1px #120a21;
+  border-bottom: solid 1px #ffffff;
   transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #120a21 4%);
   background-position: -200px 0;
   background-size: 200px 100%;
   background-repeat: no-repeat;
-  color: #fffff !important;
+  color: #ffffff;
 }
 input:focus, input:valid {
   box-shadow: none;
