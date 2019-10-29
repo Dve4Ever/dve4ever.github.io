@@ -44,6 +44,7 @@ input:focus, input:valid {
   box-shadow: none;
   outline: none;
   background-position: 0 0;
+  color: #fffff;
 }
 input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
   color: #FFFFF;
