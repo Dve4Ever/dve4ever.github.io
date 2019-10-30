@@ -23,6 +23,8 @@
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script src="https://nkappler.github.io/ctxmenu/ctxmenu.min.js"></script>
       <script src="/js/menu.js"></script>
+      <script src="/js/context-menu.js"></script>
+      <script src="/css/context-menu.css"></script>
       <script>
          AOS.init();
       </script>
@@ -114,5 +116,17 @@
              window.open(inputVal)
          }
       </script>
-   </body>
+        <div id='cntnr'>
+    <ul id='items'>
+    <li class="unselectable" id="cut">Cut <i style="color:gray; font-size:12px;">Ctrl+X</i></li>
+      <li class="unselectable" id="copy">Copy <i style="color:gray; font-size:12px;">Ctrl+C</i></li>
+      <li class="unselectable" id="paste">Paste <i style="color:gray; font-size:12px;">Ctrl+V</i></li>
+      <li class="unselectable" id="select">Select All <i style="color:gray; font-size:12px;">Ctrl+A</i></li>
+    </ul>
+    <hr />
+    <ul id='items'>
+      <li class="unselectable" id="source">View Source</li>
+    </ul>
+  </div>
+     </body>
 </html>
