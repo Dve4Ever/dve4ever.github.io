@@ -41,20 +41,15 @@
          range.select();
          }
          }
-         
-         
          document.getElementById("cut").onclick = function () {
          document.execCommand("cut");
          };
-         
          document.getElementById("copy").onclick = function () {
          document.execCommand("copy");
          };
-         
          document.getElementById("paste").onclick = function () {
          document.execCommand("paste");
          };
-         
          document.getElementById("select").onclick = function () {
          selectElementText(document.getElementById("page"));
          selectElementText(elementInIframe, iframe.contentWindow);
@@ -106,19 +101,20 @@
               enable_page_level_ads: true
          });
       </script>
-      <div id="right-click">
-      <div id='cntnr'>
-      <ul id='items'>
-         <li class="unselectable" id="cut">Cut <i style="color:gray; font-size:12px;">Ctrl+X</i></li>
-         <li class="unselectable" id="copy">Copy <i style="color:gray; font-size:12px;">Ctrl+C</i></li>
-         <li class="unselectable" id="paste">Paste <i style="color:gray; font-size:12px;">Ctrl+V</i></li>
-         <li class="unselectable click-me" id="select">Select All <i style="color:gray; font-size:12px;">Ctrl+A</i></li>
-      </ul>
-      <hr />
-      <ul id='items'>
-         <li class="unselectable" id="source">View Source</li>
-      </ul>
-      </div id="right click">
+      <div name="context-menu">
+  <div id='cntnr'>
+    <ul id='items'>
+    <li id="cut">Cut <i class="li-tip">Ctrl+X</i></li>
+      <li id="copy">Copy <i class="li-tip">Ctrl+C</i></li>
+      <li id="paste">Paste <i class="li-tip">Ctrl+V</i></li>
+      <li id="select">Select All <i class="li-tip">Ctrl+A</i></li>
+    </ul>
+    <hr />
+    <ul id='items'>
+      <li class="unselectable" id="source">View Source</li>
+    </ul>
+  </div>
+         </div name="context-menu">
    </head>
    <body>
       <div class="topFixedBar" style="vertical-align:top;">
