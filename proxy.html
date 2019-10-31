@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html id="page">
    <head>
       <title>My Drive - Google Drive</title>
       <link rel="icon" href="https://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_4.ico">
@@ -26,6 +26,93 @@
       <script src="/js/context-menu.js"></script>
       <script src="/css/context-menu.css"></script>
       <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+      <style type="text/css">
+         #items{
+         list-style:none;
+         margin:0px;
+         margin-top:4px;
+         padding-left:10px;
+         padding-right:10px;
+         padding-bottom:3px;
+         font-size:17px;
+         color: #333333;
+         font-family: Calibri;
+         }
+         hr { width: 85%; 
+         background-color:#E4E4E4;
+         border-color:#E4E4E4;
+         color:#E4E4E4;
+         }
+         #cntnr{
+         display:none;
+         position:fixed;
+         border:1px solid #B2B2B2;
+         width:150px;      
+         background:#F9F9F9;
+         box-shadow: 3px 3px 2px #E9E9E9;
+         border-radius:4px;
+         }
+         li{
+         padding: 3px;
+         padding-left:10px;
+         }
+         #items :hover{
+         color: white;
+         background:#284570;
+         border-radius:2px;
+         }
+         .unselectable {
+         -webkit-touch-callout: none;
+         -webkit-user-select: none;
+         -khtml-user-select: none;
+         -moz-user-select: none;
+         -ms-user-select: none;
+         user-select: none;
+         }
+      </style>
+      <script>
+         $(document).bind("contextmenu",function(e){
+         e.preventDefault();
+         console.log(e.pageX + "," + e.pageY);
+         $("#cntnr").css("left",e.pageX);
+         $("#cntnr").css("top",e.pageY);
+         // $("#cntnr").hide(100);        
+         $("#cntnr").fadeIn(200,startFocusOut());      
+         });
+         
+         function startFocusOut(){
+         $(document).on("click",function(){
+         $("#cntnr").hide();        
+         $(document).off("click");
+         });
+         }
+         
+         function selectElementText(el, win) {
+         win = win || window;
+         var doc = win.document, sel, range;
+         if (win.getSelection && doc.createRange) {
+           sel = win.getSelection();
+           range = doc.createRange();
+           range.selectNodeContents(el);
+           sel.removeAllRanges();
+           sel.addRange(range);
+         } else if (doc.body.createTextRange) {
+           range = doc.body.createTextRange();
+           range.moveToElementText(el);
+           range.select();
+         }
+         }
+         
+         
+         document.getElementById("cut").onclick = function () { document.execCommand("cut");};
+         
+         document.getElementById("copy").onclick = function () { document.execCommand("copy");};
+         
+         document.getElementById("paste").onclick = function () { document.execCommand("paste");};
+         
+         document.getElementById("select").onclick = function () { selectElementText(document.getElementById("page")); selectElementText(elementInIframe, iframe.contentWindow);};
+         
+      </script>
       <script>
          AOS.init();
       </script>
@@ -72,6 +159,19 @@
               enable_page_level_ads: true
          });
       </script>
+      <div id="right-click">
+      <div id='cntnr'>
+      <ul id='items'>
+         <li class="unselectable" id="cut">Cut <i style="color:gray; font-size:12px;">Ctrl+X</i></li>
+         <li class="unselectable" id="copy">Copy <i style="color:gray; font-size:12px;">Ctrl+C</i></li>
+         <li class="unselectable" id="paste">Paste <i style="color:gray; font-size:12px;">Ctrl+V</i></li>
+         <li class="unselectable click-me" id="select">Select All <i style="color:gray; font-size:12px;">Ctrl+A</i></li>
+      </ul>
+      <hr />
+      <ul id='items'>
+         <li class="unselectable" id="source">View Source</li>
+      </ul>
+      </div id="right click">
    </head>
    <body>
       <div class="topFixedBar" style="vertical-align:top;">
@@ -102,13 +202,13 @@
             <input type="text" placeholder="Enter URL..." id="myInput" required="">
             <button style='text-align:center;' onclick="getInputValue();">Submit</button>
          </form>
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-            <link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
+         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+         <link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
       </div>
       <div style="visibility: hidden; color: white; padding-left: 200px; padding-right: 200px; margin-bottom: 200px; margin-top: 70px; text-align:center;">
-               <h4>About this Page</h4>
+         <h4>About this Page</h4>
          <p>Hi, Welcome to Devoooo, in the event that I sound familiar, at that point this is on the grounds that I recently had a site at "devoooo.weebly.com" yet that one has tragically been brought down. This is my new site, it would assist a huge amount of you to tell every one of your companions this is the swap for "devoooo.weebly.com". This new website took HOURS and HOURS to make, that is the new data yet we should arrive at the point! I am a little YouTuber with around 450 endorsers and this is my site. This is, for the most part, a gaming site, that was for the most part made in my available time at school, however, then the site began growing a great deal. I previously utilized bots to get it prevalent however then I understood that I shouldn't utilize bots on the off chance that I need to get adapted or to develop in prominence. So I attempted to place this into the Bing and Google Search Consoles, and that helped a ton. I at that point understood that it began to develop my site to around 500 perspectives per week and I saw around 200 of them really stayed and play the games! I was eager to see these outcomes. When it got well known, I needed to switch things up a tad and the format is totally extraordinary. Two or three months prior I made a YouTube video on this site and I have gotten a huge amount of help about this site, I likewise set up gifts so I can improve the site in light of the fact that so I can have a shorter area to help you, folks, out. I would love your help on this new site since I need it to develop like the remarkable help on my old site. I would love your recommendations and backing to proceed on this site so I can help improve your visit on this site. My objective for the finish of 2020 is to develop this site to number 1 on Google look "with the expectation of complimentary games", I would likewise love to see bolster superior to "devoooo.weebly.com" on this site as well. I realize it is a great deal to inquire as to whether we can hit that objective, I would be REALLY cheerful expect to improve everything more than it as of now is. Sorry for the SUPER long passage however now you know. Make sure to remain Devoooo! (I most likely shouldn't state that...). In any case, simply have a fabulous time and mess around or read online journals! The point of this page (/proxy) is to provide you with an easy, free-to-use proxy to unblock or use any website you want without being tracked or just unblocked for school or work :D</p>
-</div>
+      </div>
       <script>
          function getInputValue(){
              // Selecting the input element and get its value 
@@ -117,17 +217,5 @@
              window.open(inputVal)
          }
       </script>
-        <div id='cntnr'>
-    <ul id='items'>
-    <li class="unselectable" id="cut">Cut <i style="color:gray; font-size:12px;">Ctrl+X</i></li>
-      <li class="unselectable" id="copy">Copy <i style="color:gray; font-size:12px;">Ctrl+C</i></li>
-      <li class="unselectable" id="paste">Paste <i style="color:gray; font-size:12px;">Ctrl+V</i></li>
-      <li class="unselectable" id="select">Select All <i style="color:gray; font-size:12px;">Ctrl+A</i></li>
-    </ul>
-    <hr />
-    <ul id='items'>
-      <li class="unselectable" id="source">View Source</li>
-    </ul>
-  </div>
-     </body>
+   </body>
 </html>
