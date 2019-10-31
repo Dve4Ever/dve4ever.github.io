@@ -25,7 +25,7 @@
       <script src="/js/menu.js"></script>
       <script src="/js/context-menu.js"></script>
       <script src="/css/context-menu.css"></script>
-      <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <style type="text/css">
          #items{
          list-style:none;
@@ -70,7 +70,7 @@
          user-select: none;
          }
       </style>
-      <script>
+      <script type="text/javascript">
          $(document).bind("contextmenu",function(e){
          e.preventDefault();
          console.log(e.pageX + "," + e.pageY);
