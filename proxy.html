@@ -25,6 +25,42 @@
       <script type="text/javascript" src="/js/context-menu.js"></script>
       <link rel="stylesheet" href="/css/context-menu.css">
       <script>
+         function selectElementText(el, win) {
+         win = win || window;
+         var doc = win.document,
+         sel, range;
+         if (win.getSelection && doc.createRange) {
+         sel = win.getSelection();
+         range = doc.createRange();
+         range.selectNodeContents(el);
+         sel.removeAllRanges();
+         sel.addRange(range);
+         } else if (doc.body.createTextRange) {
+         range = doc.body.createTextRange();
+         range.moveToElementText(el);
+         range.select();
+         }
+         }
+         
+         
+         document.getElementById("cut").onclick = function () {
+         document.execCommand("cut");
+         };
+         
+         document.getElementById("copy").onclick = function () {
+         document.execCommand("copy");
+         };
+         
+         document.getElementById("paste").onclick = function () {
+         document.execCommand("paste");
+         };
+         
+         document.getElementById("select").onclick = function () {
+         selectElementText(document.getElementById("page"));
+         selectElementText(elementInIframe, iframe.contentWindow);
+         };
+      </script>
+      <script>
          AOS.init();
       </script>
       <script>
