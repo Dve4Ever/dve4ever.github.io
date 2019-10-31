@@ -23,7 +23,7 @@ hr {
   border:.5px solid #B2B2B2;
   width:180px;      
   background:#FFFFFF;
-  box-shadow: 1px 1px 1px #e0e0e0;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
   border-radius:2px;
 }
 
@@ -51,7 +51,7 @@ li{
 }
 
 #items :hover{
-   color: white;
+  color: white;
   background:#284570;
   border-radius:2px;
 }
