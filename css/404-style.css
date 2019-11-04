@@ -46,8 +46,8 @@ body {
   font-size: 186px;
   font-weight: 200;
   margin: 0px;
-  background: linear-gradient(130deg, #3c006e, #ff6f68);
-  color: transparent;
+  background: linear-gradient(130deg, #ffa34f, #ff6f68);
+  color:transparent;
   -webkit-background-clip: text;
   background-clip: text;
   text-transform: uppercase;
@@ -114,4 +114,11 @@ body {
   .notfound h2 {
     font-size: 22px;
   }
+}
+
+.unselectable {
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
