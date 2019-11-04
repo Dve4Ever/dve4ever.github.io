@@ -27,8 +27,10 @@
       <script type="text/javascript">
          function selectElementText(e,n){var t,o,c=(n=n||window).document;n.getSelection&&c.createRange?(t=n.getSelection(),(o=c.createRange()).selectNodeContents(e),t.removeAllRanges(),t.addRange(o)):c.body.createTextRange&&((o=c.body.createTextRange()).moveToElementText(e),o.select())}function showSource(){var e="<html>";e+=document.getElementsByTagName("html")[0].innerHTML,e="<pre>"+(e=(e+="</html>").replace(/</g,"&lt;").replace(/>/g,"&gt;"))+"</pre>",sourceWindow=window.open("","Source of page"),sourceWindow.document.write(e),sourceWindow.document.close(),window.focus&&sourceWindow.focus()}document.getElementById("back").onclick=function(){window.history.back()},document.getElementById("foward").onclick=function(){window.history.forward()},document.getElementById("reload").onclick=function(){location.reload()},document.getElementById("cut").onclick=function(){document.execCommand("cut")},document.getElementById("copy").onclick=function(){document.execCommand("copy")},document.getElementById("paste").onclick=function(){document.execCommand("paste")},document.getElementById("select").onclick=function(){selectElementText(document.getElementById("page")),selectElementText(elementInIframe,iframe.contentWindow)},document.getElementById("source").onclick=function(){showSource()};
       </script>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>
-         AOS.init();
+        AOS.init();
       </script>
       <script>
          var OneSignal = window.OneSignal || [];
@@ -117,7 +119,7 @@
             </div>
          </div>
       </div>
-      <div style="margin-top:100px; text-align:center;">
+      <div data-aos="zoom-in" style="margin-top:100px; text-align:center;">
          <form id="urlSearch" method='GET' onsubmit=''>
             <h1 class="unselectable">Luna Proxy</h1>
             <input type="text" placeholder="Enter URL..." id="myInput" required="">
