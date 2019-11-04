@@ -47,7 +47,8 @@ body {
   font-weight: 200;
   margin: 0px;
   /* background: linear-gradient(130deg, #3c006e, #a32a24); */
-  background: url('https://colorlib.com/etc/404/colorlib-error-404-10/img/bg.jpg') no-repeat;
+  background: url('https://colorlib.com/etc/404/colorlib-error-404-10/img/bg.jpg') no-repeat ;
+  background-size: 550px 450px;
   color:transparent;
   -webkit-background-clip: text;
   background-clip: text;
