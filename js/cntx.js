@@ -14,27 +14,69 @@ function startFocusOut() {
   });
 }
 
-window.onload = function() {
-    function e(e, t) {
-        var n, c, o = (t = t || window).document;
-        t.getSelection && o.createRange ? (n = t.getSelection(), (c = o.createRange()).selectNodeContents(e), n.removeAllRanges(), n.addRange(c)) : o.body.createTextRange && ((c = o.body.createTextRange()).moveToElementText(e), c.select())
-    }
-    document.getElementById("back").onclick = function() {
-        window.history.back()
-    }, document.getElementById("foward").onclick = function() {
-        window.history.forward()
-    }, document.getElementById("reload").onclick = function() {
-        location.reload()
-    }, document.getElementById("cut").onclick = function() {
-        document.execCommand("cut")
-    }, document.getElementById("copy").onclick = function() {
-        document.execCommand("copy")
-    }, document.getElementById("paste").onclick = function() {
-        document.execCommand("paste")
-    }, document.getElementById("select").onclick = function() {
-        e(document.getElementById("page")), e(elementInIframe, iframe.contentWindow)
-    }, document.getElementById("source").onclick = function() {
-        var e;
-        e = "<html>", e += document.getElementsByTagName("html")[0].innerHTML, e = "<pre>" + (e = (e += "</html>").replace(/</g, "&lt;").replace(/>/g, "&gt;")) + "</pre>", sourceWindow = window.open("", "Source of page"), sourceWindow.document.write(e), sourceWindow.document.close(), window.focus && sourceWindow.focus()
-    }
+function selectElementText(el, win) {
+  win = win || window;
+  var doc = win.document,
+    sel, range;
+  if (win.getSelection && doc.createRange) {
+    sel = win.getSelection();
+    range = doc.createRange();
+    range.selectNodeContents(el);
+    sel.removeAllRanges();
+    sel.addRange(range);
+  } else if (doc.body.createTextRange) {
+    range = doc.body.createTextRange();
+    range.moveToElementText(el);
+    range.select();
+  }
+}
+
+function showSource(){;
+    var source = "<html>";
+    source += document.getElementsByTagName('html')[0].innerHTML;
+    source += "</html>";
+    //now we need to escape the html special chars, javascript has escape
+    //but this does not do what we want
+    source = source.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    //now we add <pre> tags to preserve whitespace
+    source = "<pre>"+source+"</pre>";
+    //now open the window and set the source as the content
+    sourceWindow = window.open('','Source of page');
+    sourceWindow.document.write(source);
+    sourceWindow.document.close(); //close the document for writing, not the window
+    //give source window focus
+    if(window.focus) sourceWindow.focus();
+}  
+
+document.getElementById("back").onclick = function() {
+  window.history.back();
+};
+
+document.getElementById("foward").onclick = function() {
+  window.history.forward();
+};
+
+document.getElementById("reload").onclick = function() {
+  location.reload();
+};
+
+document.getElementById("cut").onclick = function() {
+  document.execCommand("cut");
+};
+
+document.getElementById("copy").onclick = function() {
+  document.execCommand("copy");
+};
+
+document.getElementById("paste").onclick = function() {
+  document.execCommand('paste')
+};
+
+document.getElementById("select").onclick = function() {
+  selectElementText(document.getElementById("page"));
+  selectElementText(elementInIframe, iframe.contentWindow);
+};
+
+document.getElementById("source").onclick = function() {
+  showSource();
 };
