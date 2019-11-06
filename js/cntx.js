@@ -14,6 +14,8 @@ function startFocusOut() {
   });
 }
 
+window.onload = function () { };
+
 function selectElementText(el, win) {
   win = win || window;
   var doc = win.document,
