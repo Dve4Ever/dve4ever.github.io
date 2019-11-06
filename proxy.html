@@ -21,13 +21,6 @@
       <script src="https://smartlock.google.com/client"></script>
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-      <script type="text/javascript" src="/js/context-menu.js"></script>
-      <link rel="stylesheet" href="/css/context-menu.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-      <script type="text/javascript">
-         function selectElementText(e,n){var t,o,c=(n=n||window).document;n.getSelection&&c.createRange?(t=n.getSelection(),(o=c.createRange()).selectNodeContents(e),t.removeAllRanges(),t.addRange(o)):c.body.createTextRange&&((o=c.body.createTextRange()).moveToElementText(e),o.select())}function showSource(){var e="<html>";e+=document.getElementsByTagName("html")[0].innerHTML,e="<pre>"+(e=(e+="</html>").replace(/</g,"&lt;").replace(/>/g,"&gt;"))+"</pre>",sourceWindow=window.open("","Source of page"),sourceWindow.document.write(e),sourceWindow.document.close(),window.focus&&sourceWindow.focus()}document.getElementById("back").onclick=function(){window.history.back()},document.getElementById("foward").onclick=function(){window.history.forward()},document.getElementById("reload").onclick=function(){location.reload()},document.getElementById("cut").onclick=function(){document.execCommand("cut")},document.getElementById("copy").onclick=function(){document.execCommand("copy")},document.getElementById("paste").onclick=function(){document.execCommand("paste")},document.getElementById("select").onclick=function(){selectElementText(document.getElementById("page")),selectElementText(elementInIframe,iframe.contentWindow)},document.getElementById("source").onclick=function(){showSource()};
-      </script>
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>
@@ -70,25 +63,8 @@
               enable_page_level_ads: true
          });
       </script>
-      <!-- CONTEXT MENU -->
-      <div id='cntnr'>
-         <ul id='items'>
-            <li id="back">Back <i class="li-tip">Alt+Left Arrow </i></li>
-            <li id="foward">Foward <i class="li-tip">Alt+Right Arrow </i></li>
-            <li id="reload">Reload <i class="li-tip">Ctrl+R </i></li>
-         </ul>
-         <hr />
-         <ul id='items'>
-            <li id="cut">Cut <i class="li-tip">Ctrl+X</i></li>
-            <li id="copy">Copy <i id="copy" class="li-tip">Ctrl+C </i></li>
-            <li id="paste">Paste <i class="li-tip">Ctrl+V </i></li>
-            <li id="select">Select All <i class="li-tip">Ctrl+A </i></li>
-         </ul>
-         <hr />
-         <ul id='items'>
-            <li class="unselectable" id="source">View Source <i class="li-tip">Ctrl+U</i></li>
-         </ul>
-      </div>
+      <!-- CONTEXT MENU --> 
+      <link rel="stylesheet" href="https://dve4ever.github.io/css/context-menu.css"> <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script> <script type="text/javascript" src="https://dve4ever.github.io/js/cntx.js"></script> <div id='cntnr'> <ul id='items'> <li id="back">Back <i class="li-tip">Alt+Left Arrow </i></li> <li id="foward">Foward <i class="li-tip">Alt+Right Arrow </i></li> <li id="reload">Reload <i class="li-tip">Ctrl+R </i></li> </ul> <hr /> <ul id='items'> <li id="cut">Cut <i class="li-tip">Ctrl+X</i></li> <li id="copy">Copy <i id="copy" class="li-tip">Ctrl+C </i></li> <li id="paste">Paste <i class="li-tip">Ctrl+V </i></li> <li id="select">Select All <i class="li-tip">Ctrl+A </i></li> </ul> <hr /> <ul id='items'> <li class="unselectable" id="source">View Source <i class="li-tip">Ctrl+U</i></li> </ul> </div> 
       <!-- /CONTEXT MENU -->
    </head>
    <body>
