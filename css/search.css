@@ -29,8 +29,8 @@ button {
   background: #120a21;
   cursor: pointer;
   border-radius: 3px;
-  padding: 6px;
   float: left;
+  padding: 6px;
   width: 200px;
   color: white;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
