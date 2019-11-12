@@ -15,7 +15,7 @@
       // go to search results page which is search.html here
       // but can be anything you like with "gsc.q" hash parameter
       // equal to search query
-      window.open('/games/search.html#gsc.q=' + q, '_self');
+      window.open('/games/search.html?q=' + q, '_self');
     }
   });
 
