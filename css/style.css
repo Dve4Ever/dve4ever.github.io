@@ -4,9 +4,8 @@
 html {
   overflow-x: hidden; }
 
-#games, #ad {
-    display: flex;
-    float: left; }
+#game-img {
+  padding-bottom: 10px; }
 
 .small {
   font-size: 14px; }
