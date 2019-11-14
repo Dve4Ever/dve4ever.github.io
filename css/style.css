@@ -1,7 +1,12 @@
 
 /* Base */
+
 html {
   overflow-x: hidden; }
+
+#games, #ad {
+    display: flex;
+    float: left; }
 
 .small {
   font-size: 14px; }
