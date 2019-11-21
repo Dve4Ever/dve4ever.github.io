@@ -1666,8 +1666,7 @@ form .form-control {
   padding-left: 20px;
   padding-right: 20px;
   border-color: transparent;
-  margin-right: 10px;
-  background: #efefef; }
+  margin-right: 10px; }
   form .form-control:active, form .form-control:focus {
     border-color: transparent;
     background: #efefef;
