@@ -79,20 +79,10 @@
          }
       </style>
       <script>
-         var invalidClassName = 'invalid'
-         var inputs = document.querySelectorAll('input, select, textarea')
-         inputs.forEach(function (input) {
-         
-         input.addEventListener('invalid', function () {
-         input.classList.add(invalidClassName)
-         })
-         
-         input.addEventListener('input', function () {
-         if (input.validity.valid) {
-         input.classList.remove(invalidClassName)
-         }
-         })
-         })  
+    var forms = document.querySelectorAll('.example-form_after form')
+    forms.forEach(function (form) {
+      ValidForm(form, {errorPlacement: 'after'})
+    })
       </script>
       <link rel="stylesheet" href="css/style.css">
    </head>
