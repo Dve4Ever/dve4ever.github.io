@@ -78,6 +78,22 @@
          font-size: 10px;
          }
       </style>
+      <script>
+         var invalidClassName = 'invalid'
+         var inputs = document.querySelectorAll('input, select, textarea')
+         inputs.forEach(function (input) {
+         
+         input.addEventListener('invalid', function () {
+         input.classList.add(invalidClassName)
+         })
+         
+         input.addEventListener('input', function () {
+         if (input.validity.valid) {
+         input.classList.remove(invalidClassName)
+         }
+         })
+         })  
+      </script>
       <link rel="stylesheet" href="css/style.css">
    </head>
    <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
