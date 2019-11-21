@@ -1666,7 +1666,8 @@ form .form-control {
   padding-left: 20px;
   padding-right: 20px;
   border-color: transparent;
-  margin-right: 10px; }
+  margin-right: 10px;
+  background-color: #efefef; }
   form .form-control:active, form .form-control:focus {
     border-color: transparent;
     background: #efefef;
@@ -1798,4 +1799,3 @@ select {
   background: url(https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png) 96% / 15% no-repeat #eee;
   background-size: 30px 30px;
 }
-
