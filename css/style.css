@@ -4,6 +4,9 @@
 html {
   overflow-x: hidden; }
 
+.game-agln {
+  border-radius: 25px; }
+
 #game-img {
   padding-bottom: 10px; }
 
