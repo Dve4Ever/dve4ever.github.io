@@ -7,15 +7,15 @@ html {
 .game-agln {
   transition: transform .2s;
   border-radius: 25px;
-  width: 150px;
-  height: 150px;
-  padding: 5px; }
+  width: 160px;
+  height: 160px;
+  padding: 3px; }
 
 .game-agln:hover {
   -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1); 
-  padding-bottom: 10px; }
+  padding: 5px; }
 
 .small {
   font-size: 14px; }
