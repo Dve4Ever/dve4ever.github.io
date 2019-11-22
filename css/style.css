@@ -7,14 +7,14 @@ html {
 .game-agln {
   transition: transform .2s;
   border-radius: 25px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  padding: 15px; }
 
 .game-agln:hover {
   -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1); 
-  padding-bottom: 10px;
-  padding: 15px; }
+  padding-bottom: 10px; }
 
 .small {
   font-size: 14px; }
