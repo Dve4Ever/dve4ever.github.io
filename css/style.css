@@ -9,14 +9,14 @@ html {
   border-radius: 25px;
   width: 160px;
   height: 160px;
-  padding: 1px;
-  margin-bottom: 10px; }
+  padding: 2px;
+  margin-bottom: 8px; }
 
 .game-agln:hover {
   -ms-transform: scale(1.15); /* IE 9 */
   -webkit-transform: scale(1.15); /* Safari 3-8 */
   transform: scale(1.15); 
-  padding: 3px; }
+  padding: 5px; }
 
 .small {
   font-size: 14px; }
