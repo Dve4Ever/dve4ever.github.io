@@ -16,7 +16,9 @@ html {
   -ms-transform: scale(1.2); /* IE 9 */
   -webkit-transform: scale(1.2); /* Safari 3-8 */
   transform: scale(1.2); 
-  padding: 7px; }
+  padding: 7px; 
+  filter: blur(8px);
+  -webkit-filter: blur(8px); }
 
 .small {
   font-size: 14px; }
