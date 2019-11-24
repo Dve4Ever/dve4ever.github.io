@@ -17,8 +17,8 @@ html {
   -webkit-transform: scale(1.2); /* Safari 3-8 */
   transform: scale(1.2); 
   padding: 7px; 
-  filter: blur(.1px);
-  -webkit-filter: blur(.1px); }
+  filter: blur(1px);
+  -webkit-filter: blur(1px); }
 
 .small {
   font-size: 14px; }
