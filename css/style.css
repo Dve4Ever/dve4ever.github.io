@@ -18,7 +18,8 @@ html {
   transform: scale(1.2); 
   padding: 7px; 
   filter: blur(0px);
-  -webkit-filter: blur(0px); }
+  -webkit-filter: blur(0px);
+  margin: 10px; }
 
 .small {
   font-size: 14px; }
