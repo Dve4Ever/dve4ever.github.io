@@ -4,12 +4,12 @@
 html {
   overflow-x: hidden; }
 
-.example:hover>*:not(.text) {
+.game-icn:hover>*:not(.game-name) {
   filter: blur(1.1px);
   -webkit-filter: blur(1.1px);
 }
 
-.example:hover {
+.game-icn:hover {
   -ms-transform: scale(1.2);
   /* IE 9 */
   -webkit-transform: scale(1.2);
@@ -18,7 +18,7 @@ html {
 }
 
 
-.example {
+.game-icn {
   position: relative;
   padding: 0;
   width: 160px;
@@ -40,7 +40,7 @@ html {
 
 }
 
-.content {
+.game-txt {
   opacity: 0;
   font-size: 14px;
   position: absolute;
@@ -55,16 +55,16 @@ html {
   -webkit-filter: blur(0px) !important;
 }
 
-.example .content:hover {
+.game-icn .game-txt:hover {
   opacity: 1;
 }
 
-.example .content .text {
+.game-icn .game-txt .game-name {
   height: 0;
   opacity: 1;
 }
 
-.example .content:hover .text {
+.game-icn .game-txt:hover .game-name {
   opacity: 1;
   padding-top: 70px;
 
