@@ -17,7 +17,7 @@ html {
 .game-icn {
   position: relative;
   padding: 0;
-  width: 160px;
+  width: 120px;
   display: block;
   cursor: pointer;
   overflow: hidden;
@@ -37,8 +37,8 @@ html {
   left: 0;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.4);
-  width: 160px;
-  height: 160px;
+  width: 120px;
+  height: 120px;
   text-align: center;
   filter: blur(0px) !important;
   -webkit-filter: blur(0px) !important; }
