@@ -2,6 +2,9 @@
 html {
   overflow-x: hidden; }
 
+iframe {    
+ border: 0; }
+
 .small {
   font-size: 14px; }
 
