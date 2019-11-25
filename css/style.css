@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 html {
   overflow-x: hidden; }
@@ -22,7 +21,7 @@ html {
   cursor: pointer;
   overflow: hidden;
   transition: transform .22s;
-  border-radius: 25px;
+  border-radius: 30px;
   margin: 5px;
   -webkit-user-select: none;
   -moz-user-select: none;
