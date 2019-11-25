@@ -32,6 +32,8 @@ html {
 .game-txt {
   opacity: 0;
   font-size: 14px;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
   position: absolute;
   top: 0;
   left: 0;
