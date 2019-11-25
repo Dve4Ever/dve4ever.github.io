@@ -11,7 +11,8 @@ html {
 .game-icn:hover {
   -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);
-  transform: scale(1.2); }
+  transform: scale(1.2); 
+  margin: 6px; }
 
 .game-icn {
   position: relative;
@@ -22,7 +23,7 @@ html {
   overflow: hidden;
   transition: transform .22s;
   border-radius: 25px;
-  margin: 8px;
+  margin: 5px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
