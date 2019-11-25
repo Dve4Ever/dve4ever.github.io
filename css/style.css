@@ -4,22 +4,71 @@
 html {
   overflow-x: hidden; }
 
-.game-agln {
+.example:hover>*:not(.text) {
+  filter: blur(1.1px);
+  -webkit-filter: blur(1.1px);
+}
+
+.example:hover {
+  -ms-transform: scale(1.2);
+  /* IE 9 */
+  -webkit-transform: scale(1.2);
+  /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
+
+.example {
+  position: relative;
+  padding: 0;
+  width: 160px;
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
   transition: transform .22s;
   border-radius: 25px;
+  margin-bottom: 8px;
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+/Edge */
+  user-select: none;
+  /* Standard */
+
+
+}
+
+.content {
+  opacity: 0;
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.4);
   width: 160px;
   height: 160px;
-  padding: 4px;
-  margin-bottom: 8px; }
+  text-align: center;
+  filter: blur(0px) !important;
+  -webkit-filter: blur(0px) !important;
+}
 
-.game-agln:hover {
-  -ms-transform: scale(1.2); /* IE 9 */
-  -webkit-transform: scale(1.2); /* Safari 3-8 */
-  transform: scale(1.2); 
-  padding: 7px; 
-  filter: blur(0px);
-  -webkit-filter: blur(0px);
-  margin: 8px; }
+.example .content:hover {
+  opacity: 1;
+}
+
+.example .content .text {
+  height: 0;
+  opacity: 1;
+}
+
+.example .content:hover .text {
+  opacity: 1;
+  padding-top: 70px;
+
+}
 
 .small {
   font-size: 14px; }
