@@ -4,8 +4,8 @@ html {
   overflow-x: hidden; }
 
 .game-icn:hover>*:not(.game-name) {
-  filter: blur(2px);
-  -webkit-filter: blur(2px); }
+  filter: blur(2.2px);
+  -webkit-filter: blur(2.2px); }
 
 .game-icn:hover {
   -ms-transform: scale(1.2);
