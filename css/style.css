@@ -65,7 +65,7 @@ iframe {
   opacity: 0;
   font-size: 12px;
   font-family: 'Baloo', cursive;
-  text-shadow: 2px 2px 5px black;
+  text-shadow: 2px 2px 40px black;
   position: absolute;
   top: 0;
   left: 0;
