@@ -4,7 +4,7 @@ html {
   overflow-x: hidden; }
 
 .site-navigation .site-logo .modern-cheese-crcl-crpd-white-bkg {
-  font-family: 'Baloo', cursive !important; }
+  font-family: 'Baloo', cursive; }
 
 div.rgb-box-black {
   background-color: rgba(0, 0, 0, .5);
