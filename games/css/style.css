@@ -3,8 +3,8 @@
 html {
   overflow-x: hidden; }
 
-.site-navigation {
-  font-family: 'Baloo', cursive; }
+.site-navigation, site-logo {
+  font-family: 'Baloo', cursive !important; }
 
 iframe {    
  border: 0; }
