@@ -3,9 +3,8 @@
 html {
   overflow-x: hidden; }
 
-.site-navigation {
-  font-family: 'Baloo', cursive; 
-}
+.site-navigation, site-logo {
+  font-family: 'Baloo', cursive !important; }
 
 div.rgb-box-black {
   background-color: rgba(0, 0, 0, .5);
