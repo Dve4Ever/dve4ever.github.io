@@ -1,6 +1,10 @@
-/* Base */
+@import url('https://fonts.googleapis.com/css?family=Baloo&display=swap');
+
 html {
   overflow-x: hidden; }
+
+.site-navigation {
+  font-family: 'Baloo', cursive; }
 
 iframe {    
  border: 0; }
