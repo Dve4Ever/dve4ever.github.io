@@ -3691,8 +3691,8 @@ a.shipping-calculator-button:hover{
     29. Force Colors
 --------------------------*/
 
-.f-white {
-  color: #fff !important;
+a.f-white {
+  color: white!important;
 }
 
 
