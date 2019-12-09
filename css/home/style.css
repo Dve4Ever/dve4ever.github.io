@@ -3700,12 +3700,21 @@ a.f-white {
     30. Service Area
 --------------------------*/
 
+div.service-2 {
+  color: black !important;
+}
+
 .service-2 {
   padding: 40px;
-  background: #fff;
+  background: #4d4d4d;
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
+
+}
+
+.service-2 {
+   opacity: 0.5;
 }
 
 .service-2 .svg {
@@ -3741,9 +3750,10 @@ a.f-white {
 }
 
 .service-2:hover {
-  background-color: #85007e;
+  background-color: #ed5555;
   -webkit-box-shadow: 0 5px 50px 0 rgba(46, 49, 146, 0.1);
   box-shadow: 0 5px 50px 0 rgba(46, 49, 146, 0.1);
+    opacity: 0.5;
 }
 
 .service-2:hover h3 {
@@ -3751,10 +3761,11 @@ a.f-white {
 }
 
 .service-2:hover h3 span:after {
-  background-color: #fb7400;
+  background-color: #ed9999;
 }
 
 .service-2:hover p {
   color: rgba(255, 255, 255, 0.7);
 }
+
 
