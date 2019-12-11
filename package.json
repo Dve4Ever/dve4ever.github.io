@@ -1,0 +1,20 @@
+  {
+    "name": "devoooo",
+    "description": "",
+    "version": "1.0.0",
+    "main": "index.php",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/dve4ever/dve4ever.github.io.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": https://github.com/dve4ever/dve4ever.github.io/issues"
+    },
+    "homepage": "https://github.com/dve4ever/dve4ever.github.io"
+  }
