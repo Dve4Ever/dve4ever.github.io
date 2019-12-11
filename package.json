@@ -4,7 +4,6 @@
   "description": "devoooo website ",
   "main": "app.js",
   "scripts": {
-  "start": "node app.js"
 },
   "repository": {
   "type": "git",
