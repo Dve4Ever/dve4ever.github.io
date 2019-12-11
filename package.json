@@ -1,8 +1,19 @@
 {
-  "name": "Devoooo",
-  "version": "3.1.2",
-  "devDependencies": {
-    "grunt": "~0.4.2",
-    "load-grunt-tasks": "~0.2.0"
-  }
+  "name": "devoooo",
+  "version": "1.0.0",
+  "description": "devoooo website ",
+  "main": "app.js",
+  "scripts": {
+  "start": "node index.html"
+},
+  "repository": {
+  "type": "git",
+  "url": ""
+},
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+  "url": ""
+},
+  "homepage": ""
 }
