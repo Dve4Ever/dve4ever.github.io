@@ -4,7 +4,7 @@
   "description": "devoooo website ",
   "main": "app.js",
   "scripts": {
-  "start": "node index.html"
+  "start": "node app.js"
 },
   "repository": {
   "type": "git",
@@ -15,5 +15,5 @@
   "bugs": {
   "url": ""
 },
-  "homepage": ""
+  "homepage": "index.html"
 }
