@@ -1,6 +1,19 @@
-  {
-    "name": "devoooo",
-    "description": "",
-    "version": "1.0.0",
-    "main": "index.php",
-  }
+{
+  "name": "devoooo",
+  "version": "1.0.0",
+  "description": "devoooo",
+  "main": "index.php",
+  "scripts": {
+  "start": "node index.php"
+},
+  "repository": {
+  "type": "git",
+  "url": ""
+},
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+  "url": ""
+},
+  "homepage": ""
+}
