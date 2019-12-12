@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html class="no-js" lang="en">
    <head>
@@ -15,11 +16,10 @@
       <!-- CSS -->
       <link rel="stylesheet" href="css/home/main.css">
       <!-- JS -->
-      <script async src="js/home/compressed.js"></script>
-      <script async src="js/home/compressed.min.js"></script>
-      <script async src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script>
-      <script async src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script async src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+      <script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script>
+      <script src="js/home/vendor/modernizr-2.8.3.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148031841-1"></script>
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
    </head>
@@ -130,6 +130,9 @@
                   </div>
                   <ul class="sidebar__thumd">
                      <li>
+                        <div class="text-center">
+                           <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"> <input type="hidden" name="cmd" value="_donations" /> <input type="hidden" name="business" value="33Y67FZ7AY8CY" /> <input type="hidden" name="item_name" value="All donations will be utilized to improve your experience with MrDevoooo" /> <input type="hidden" name="currency_code" value="USD" /> <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" /> <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" /></form>
+                        </div>
                      </li>
                   </ul>
                   <div class="offset__widget">
@@ -140,9 +143,9 @@
                         </ul>
                      </div>
                      <div class="offset__single">
-                        <h4 class="offset__title">Donate</h4>
+                        <h4 class="offset__title">Currency</h4>
                         <ul>
-                           <li><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"> <input type="hidden" name="cmd" value="_donations" /> <input type="hidden" name="business" value="33Y67FZ7AY8CY" /> <input type="hidden" name="item_name" value="All donations will be utilized to improve your experience with MrDevoooo" /> <input type="hidden" name="currency_code" value="USD" /> <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" /> <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" /></form></li>
+                           <li><a href="?currency=usd">USD: Dollar</a></li>
                         </ul>
                      </div>
                   </div>
@@ -370,5 +373,14 @@
             </div>
          </footer>
       </div>
+      <script src="js/home/vendor/jquery-1.12.0.min.js"></script>
+      <script src="js/home/bootstrap.min.js"></script>
+      <script src="js/home/plugins.js"></script>
+      <script src="js/home/slick.min.js"></script>
+      <script src="js/home/owl.carousel.min.js"></script>
+      <script src="js/home/waypoints.min.js"></script>
+      <script src="js/home/search.js"></script>
+      <script src="js/home/google.js"></script>
+      <script src="js/home/main.js"></script>
    </body>
 </html>
