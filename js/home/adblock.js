@@ -1,4 +1,4 @@
-fetch('https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js').catch(() => {
+fetch('//eo62cocntx.com/f02eb8342057764a4dc50f42ff5bc8e8/invoke.js').catch(() => {
 	let adp_underlay = document.createElement('div');
 	adp_underlay.className = 'adp-underlay';
 	document.body.appendChild(adp_underlay);
