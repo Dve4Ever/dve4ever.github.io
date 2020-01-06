@@ -1,4 +1,5 @@
 @import url(core.css);@import url(style.css);@import url(responsive.css);@import url(bootstrap.min.css);@import url(owl.carousel.min.css);@import url(owl.theme.default.min.css);@import url(shortcode/shortcodes.css);@import url(https://dve4ever.github.io/css/color-box-latest.css);@import url(https://unpkg.com/aos@2.3.1/dist/aos.css);@import url(https://wpcc.io/lib/1.0.2/cookieconsent.min.css);
+ @import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700|Sansita+One);
 
  :root {
    --primary-color: #302AE6;
@@ -26,6 +27,8 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
      color: var(--heading-color);
+         font-family: "Sansita One", serif !important;  
+
 } 
 
  /*slider switch css */
