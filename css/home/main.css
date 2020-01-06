@@ -1,1 +1,70 @@
 @import url(core.css);@import url(style.css);@import url(responsive.css);@import url(bootstrap.min.css);@import url(owl.carousel.min.css);@import url(owl.theme.default.min.css);@import url(shortcode/shortcodes.css);@import url(https://dve4ever.github.io/css/color-box-latest.css);@import url(https://unpkg.com/aos@2.3.1/dist/aos.css);@import url(https://wpcc.io/lib/1.0.2/cookieconsent.min.css);
+
+ :root {
+   --primary-color: #302AE6;
+   --secondary-color: #536390;
+   --font-color: #424242;
+   --bg-color: #fff;
+   --heading-color: #292922;
+ }
+
+ [data-theme="dark"] {
+   --primary-color: #9A97F3;
+   --secondary-color: #818cab;
+   --font-color: #e1e1ff;
+   --bg-color: #161625;
+   --heading-color: #818cab;
+ }
+
+ body, html {
+   background-color: var(--bg-color);
+ }
+
+p {
+     color: var(--font-color);
+} 
+
+h1, h2, h3, h4, h5, h6 {
+     color: var(--heading-color);
+} 
+
+ /*slider switch css */
+ .theme-switch-wrapper {
+   display: flex;
+   align-items: center;
+
+
+ }
+
+ .theme-switch {
+   height: 32px;
+   position: relative;
+   width: 32px;
+ }
+
+ .theme-switch input {
+   display: none;
+ }
+
+ .switch {
+
+   background-image: url(https://cdn3.iconfinder.com/data/icons/meteocons/512/moon-symbol-512.png);
+   background-size: 32px 32px;
+   background-repeat: no-repeat;
+   bottom: 0;
+   cursor: pointer;
+   left: 0;
+   position: absolute;
+   right: 0;
+   top: 0;
+   transition: .33s;
+ }
+
+ input:checked+.switch {
+   background-image: url(https://cdn3.iconfinder.com/data/icons/meteocons/512/sun-symbol-512.png);
+   filter: invert(100%);
+
+   background-size: 32px 32px;
+   background-repeat: no-repeat;
+
+ }
