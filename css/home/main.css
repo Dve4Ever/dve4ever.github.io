@@ -4133,7 +4133,7 @@ div.service-2 {
   margin-left: 0.3125rem;
 }
 
-.dark>*:not(.new__product__details),
+.dark, .dark:not(.new__product__details),
 .dark * {
   background-color: #161625 !important;
   color: #e1e1ff !important;
