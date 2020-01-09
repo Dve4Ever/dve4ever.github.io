@@ -4150,6 +4150,13 @@ div.service-2 {
   color: #e1e1ff !important;
 }
 
+.dark-service-2,
+.dark-service-2 * {
+  border-style: solid !important;
+  border-width: 1px !important;
+  border-color: white !important;
+}
+
 
 
 
