@@ -4144,5 +4144,12 @@ div.service-2 {
   color: #9A97F3 !important;
 }
 
+.dark-footer,
+.dark-footer * {
+  background-color: #0b0b12 !important;
+  color: #e1e1ff !important;
+}
+
+
 
 
