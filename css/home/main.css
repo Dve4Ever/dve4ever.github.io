@@ -4020,7 +4020,10 @@ div.service-2 {
 	-webkit-transition: .3s all ease;
 	-o-transition: .3s all ease;
 	transition: .3s all ease;
-	height: 210px
+	height: 210px;
+	border-style: solid !important;
+	border-width: 1px !important;
+	border-color: white !important;
 }
 
 .service-2 .svg {
@@ -4139,7 +4142,7 @@ div.service-2 {
   color: #e1e1ff !important;
 }
 
-.dark-header,
+.dark-header .dark-header:not(.new__product__details),
 .dark-header * {
   color: #9A97F3 !important;
 }
