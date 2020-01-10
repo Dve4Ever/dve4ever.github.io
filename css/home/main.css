@@ -4119,21 +4119,23 @@ div.service-2 {
 
 /* DARK */
 
-.switch {
-  align-self: flex-end;
-  margin: 0.9375rem;
-}
-
 .inner-switch {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #161625;
+  color: #e1e1ff;
+  text-align: center;
+  box-shadow: 5px 5px 10px black;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   display: inline-block;
   cursor: pointer;
-  border: 1px solid #555;
-  border-radius: 1.25rem;
-  width: 3.125rem;
-  text-align: center;
+  border-radius: 2px;
   font-size: 1rem;
-  padding: 0.1875rem;
-  margin-left: 0.3125rem;
+  padding: 10px;
+  align-self: flex-end;
 }
 
 .dark,
@@ -4142,8 +4144,7 @@ div.service-2 {
   color: #e1e1ff !important;
 }
 
-.dark-header
-.dark-header * {
+.dark-header .dark-header * {
   color: #9A97F3 !important;
 }
 
@@ -4163,4 +4164,5 @@ div.service-2 {
 .new__product__details * {
   background-color: transparent !important;
 }
+
 
