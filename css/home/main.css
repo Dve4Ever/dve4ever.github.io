@@ -4122,7 +4122,8 @@ div.service-2 {
 .inner-switch {
   position: fixed;
   bottom: 40px;
-  right: 40px;
+  left: 40px;
+  z-index: 10;
   background-color: #161625;
   color: #e1e1ff;
   text-align: center;
