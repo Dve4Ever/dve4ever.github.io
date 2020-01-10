@@ -4136,13 +4136,13 @@ div.service-2 {
   margin-left: 0.3125rem;
 }
 
-.dark, .dark:not(.new__product__details),
+.dark,
 .dark * {
   background-color: #161625 !important;
   color: #e1e1ff !important;
 }
 
-.dark-header .dark-header:not(.new__product__details),
+.dark-header
 .dark-header * {
   color: #9A97F3 !important;
 }
@@ -4153,15 +4153,9 @@ div.service-2 {
   color: #e1e1ff !important;
 }
 
-
-/*
-.dark-service-2,
-.dark-service-2 * {
-  border-style: solid !important;
-  border-width: 1px !important;
-  border-color: white !important;
+.new__product__details,
+.new__product__details * {
+  background-color: transparent !important;
 }
-*/
-
 
 
