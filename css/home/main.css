@@ -4124,10 +4124,10 @@ div.service-2 {
   bottom: 40px;
   left: 40px;
   z-index: 10;
-  background-color: #161625;
+  background-color: #0b0b12;
   color: #e1e1ff;
   text-align: center;
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 1px 1px 15px black;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -4159,5 +4159,3 @@ div.service-2 {
 .new__product__details * {
   background-color: transparent !important;
 }
-
-
