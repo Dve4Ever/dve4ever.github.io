@@ -4117,6 +4117,64 @@ div.service-2 {
 	display: inline-block
 }
 
+/* GAME STUFF */
+
+iframe {    
+ border: 0; }
+
+.game-icn:hover>*:not(.game-name) {
+  filter: blur(2.2px);
+  -webkit-filter: blur(2.2px);
+  transform: scale(1.1); }
+
+.game-icn:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); 
+  margin: 6px; }
+
+.game-icn {
+  position: relative;
+  padding: 0;
+  width: 140px;
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform .22s;
+  border-radius: 26px;
+  margin: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.game-txt {
+  opacity: 0;
+  font-size: 12px;
+  font-family: 'Baloo', cursive;
+  text-shadow: 2px 2px 40px black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 140px;
+  height: 140px;
+  text-align: center;
+  filter: blur(0px) !important;
+  -webkit-filter: blur(0px) !important; }
+
+.game-icn .game-txt:hover {
+  opacity: 1; }
+
+.game-icn .game-txt .game-name {
+  height: 0;
+  opacity: 1; }
+
+.game-icn .game-txt:hover .game-name {
+  opacity: 1;
+  padding-top: 60px; }
+
 /* DARK */
 
 .inner-switch {
