@@ -12,7 +12,20 @@
       <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
       <link rel="shortcut icon" type="image/x-icon" href="/images/modern-logo-full.png">
       <link rel="apple-touch-icon" href="/images/modern-logo-full.png">
+      <link
+  rel="stylesheet"
+  href="https://unpkg.com/simplebar@5.1.0/dist/simplebar.css"
+/>
+<script src="https://unpkg.com/simplebar@5.1.0/dist/simplebar.min.js"></script>
       <title>Devoooo • Home</title>
+      <!-- AdSense -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-5731588986654370",
+            enable_page_level_ads: true
+         });
+      </script>
       <!-- CSS -->
       <link rel="stylesheet" href="css/home/main.css">
       <!-- JS -->
@@ -23,10 +36,39 @@
       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
    </head>
    <body>
+         <!-- DARK -->
+      <div class="switch">
+         <span class="inner-switch">DARK: OFF</span>
+      </div>
+      <!-- CONTEXT MENU -->
+      <link href="//staydevoooo.com/css/context-menu-latest.css" rel="stylesheet" type="text/css"/>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <script src="//staydevoooo.com/js/context-menu-latest.js"></script> 
+      <div id='cntnr'>
+         <ul id='items'>
+            <li id="back">Back <i class="li-tip">Alt+Left Arrow </i></li>
+            <li id="foward">Foward <i class="li-tip">Alt+Right Arrow </i></li>
+            <li id="reload">Reload <i class="li-tip">Ctrl+R </i></li>
+         </ul>
+         <hr />
+         <ul id='items'>
+            <li id="cut">Cut <i class="li-tip">Ctrl+X</i></li>
+            <li id="copy">Copy <i id="copy" class="li-tip">Ctrl+C </i></li>
+            <li id="paste">Paste <i class="li-tip">Ctrl+V </i></li>
+            <li id="select">Select All <i class="li-tip">Ctrl+A </i></li>
+         </ul>
+         <hr />
+         <ul id='items'>
+            <li class="unselectable" id="source">View Source <i class="li-tip">Ctrl+U</i></li>
+         </ul>
+         <hr / class="wm-hr">
+         <ul id='items'>
+            <li id="wm" class="unselectable watermark">Made with ❤️ from MrDevoooo</li>
+         </ul>
+      </div>
       <!--[if lt IE 8]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->  
-      <div class="wrapper fixed__footer">
+      <div data-simplebar class="wrapper fixed__footer">
          <header id="header" class="htc-header">
             <div id="sticky-header-with-topbar" class="mainmenu__area sticky__header header--2">
                <div class="container">
@@ -122,16 +164,33 @@
                   <div class="off__contact">
                      <div class="logo">
                         <a href="index.html">
-                        <img src="images/logo-n.png" style="width:66%; height:66%" alt="logo">
+                        <h1 color="black">Devoooo</h1>
                         </a>
                      </div>
-                     <p style="font-size: 12px;">Hey, I'm Devoooo! This is my new website. The aim of this website is to be completely identical to my old one (devoooo.weebly.com) that got taken down. My goal is to provide my audience with blogs, flash, or html5 games if thats what they do. I will try my best to provide you guys with this, i'll also try to update this site with new games and blogs weekly. Please help me out by sharing this new website to your friends and family to help me reach my goal of hitting 300 unique visitors before 2021! Stay Devoooo :)</p>
+                     <p style="font-size: 12px;">Welcome to Devoooo, the point of this site is to satisfy my audience with free online FLASH or HTML games or blog to peruse. If you don't mind assisting me with the task of sharing this new site to your family or friends to help me with arriving at my goal of hitting 300 unique people before 2021! Stay Devoooo :)</p>
+                     <hr>
+                     <div id="parent">
+                        <div>
+                           <p>We have a total of&nbsp;</p>
+                        </div>
+                        <div>
+                           <script type="text/javascript" src="//widget.supercounters.com/ssl/texthit.js"></script>
+                           <script type="text/javascript">
+                              var sc_texthit_var = sc_texthit_var || [];
+                              sc_text_hit(1566618, "", "#002114");
+                           </script>
+                           <noscript></noscript>
+                        </div>
+                        <div>
+                           <p> visits in 2020!</p>
+                        </div>
+                     </div>
+                     <p class="text-center" style="font-size: 8.5px;font-weight:bold;">If you'd like to help me start a career in <a href="https://twitch.tv/devooooyt">Twitch</a> streaming, feel free to donate below!</p>
                   </div>
                   <ul class="sidebar__thumd">
                      <li>
-                        <div class="text-center">
-                           <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"> <input type="hidden" name="cmd" value="_donations" /> <input type="hidden" name="business" value="33Y67FZ7AY8CY" /> <input type="hidden" name="item_name" value="All donations will be utilized to improve your experience with MrDevoooo" /> <input type="hidden" name="currency_code" value="USD" /> <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" /> <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" /></form>
-                        </div>
+                        <div style="margin-left:20px" class="gfm-embed" data-url="https://www.gofundme.com/f/devonpc/widget/small"></div>
+                        <script defer src="https://www.gofundme.com/static/js/embed.js"></script>
                      </li>
                   </ul>
                   <div class="offset__widget">
@@ -163,13 +222,13 @@
          </div>
          <div class="slider__container slider--two">
             <div class="slider__activation__wrap--2">
-               <div class="slider__full--screen" style="background: rgba(0, 0, 0, 0) url(/images/home/background.webp) no-repeat scroll center center / cover ;">
+               <div class="slider__full--screen" style="background: rgba(0, 0, 0, 0) url(/images/home/backgrounds/trispace.jpg) no-repeat scroll center center / cover ;">
                   <div class="container">
                      <div class="row">
                         <div class="col-xs-12">
                            <div class="slider__content--2 text-center">
                               <div class="slider__inner--2 text-center">
-                                 <h1 style="color:white;">Welcome to Devoooo</h1>
+                                 <h1 style="color:white !important;">Welcome to Devoooo</h1>
                                  <div class="slider__btn">
                                     <a style="color:white;" class="htc__btn" href="games.html">play free games.</a>
                                  </div>
@@ -181,7 +240,7 @@
                </div>
             </div>
          </div>
-<!-- replace with code -->
+<!-- code -->
          <footer class="htc__foooter__area bg__gray">
             <div class="container">
                <div class="row">
@@ -190,7 +249,7 @@
                         <div class="ft__widget">
                            <div class="ft__logo">
                               <a href="index.html">
-                              <img src="images/logo-n.png" style="width:85%; height:85%" alt="footer logo">
+                              <h1>Devoooo 🧀</h1>
                               </a>
                            </div>
                         </div>
@@ -257,7 +316,7 @@
       <script src="js/home/slick.min.js"></script>
       <script src="js/home/owl.carousel.min.js"></script>
       <script src="js/home/waypoints.min.js"></script>
-      <script src="js/home/search.js"></script>
+      <script src="js/home/extras.js"></script>
       <script src="js/home/google.js"></script>
       <script src="js/home/relic.js"></script>
       <script src="js/home/adblock.js"></script>
