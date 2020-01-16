@@ -4021,10 +4021,7 @@ div.service-2 {
 	-o-transition: .3s all ease;
 	transition: .3s all ease;
 	height: 210px;
-	border-style: solid !important;
-	border-width: .5px !important;
-	border-color: white !important;
-}
+ 	border: .5px solid rgba(255, 255, 255, .5);}
 
 .service-2 .svg {
 	width: 60px;
