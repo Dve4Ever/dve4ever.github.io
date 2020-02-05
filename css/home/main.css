@@ -4214,3 +4214,23 @@ iframe {
 .new__product__details * {
   background-color: transparent !important;
 }
+
+
+.chat {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 10;
+  background-color: #ffffff;
+  color: #e1e1ff;
+  text-align: center;
+  box-shadow: 1px 1px 15px black;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 1rem;
+  padding: 10px;
+  align-self: flex-end;
+}
