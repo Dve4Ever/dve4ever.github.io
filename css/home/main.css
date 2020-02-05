@@ -4215,11 +4215,10 @@ iframe {
   background-color: transparent !important;
 }
 
-
 .chat {
   position: fixed;
-  bottom: 40px;
-  right: 40px;
+  bottom: -10px;
+  right: 25px;
   z-index: 10;
   background-color: #ffffff;
   color: #e1e1ff;
@@ -4229,8 +4228,9 @@ iframe {
   -ms-user-select: none;
   user-select: none;
   display: inline-block;
-  border-radius: 2px;
+  border-radius: 12px;
   font-size: 1rem;
-  padding: 10px;
+  padding-bottom: 16px;
+  padding-top: 12px;
   align-self: flex-end;
 }
