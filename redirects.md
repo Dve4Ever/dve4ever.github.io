@@ -1,8 +1,6 @@
 ---
 permalink: /home.html
----
 permalink: /client.html
----
 permalink: /client
 ---
 Redirecting to "/index"...
