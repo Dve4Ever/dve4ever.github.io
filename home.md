@@ -1,10 +1,8 @@
 ---
 permalink: /home.html
 ---
+
 Redirecting to "/index"...
----
-permalink: /client
----
 
 ```
 <script>
