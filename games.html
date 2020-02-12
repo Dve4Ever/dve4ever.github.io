@@ -31,14 +31,138 @@
       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
    </head>
    <body>
-      <span class="chat">
-         <center>
-            <strong>
-               <h5>Public Chat Room #1</h5>
-            </strong>
-         </center>
-         <br/><iframe src="https://minnit.chat/MrDevoooo?embed&bright&nickname=User" style="border:none;width:85%;height:400px;" allowTransparency="true"></iframe>
-      </span>
+<style>
+  #chat {
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 20px;
+    position: fixed;
+    bottom: -10px;
+    right: 25px;
+    z-index: 10;
+    background-color: #ffffff;
+    color: #e1e1ff;
+    box-shadow: 1px 1px 15px black;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: inline-block;
+    border-radius: 12px;
+    font-size: 1rem;
+    padding-bottom: 16px;
+    padding-top: 12px;
+    align-self: flex-end;
+  }
+
+  .chat-toggle {
+    position: fixed;
+    bottom: 90px;
+    left: 40px;
+    z-index: 10;
+    background-color: #0b0b12;
+    color: #e1e1ff;
+    text-align: center;
+    box-shadow: 1px 1px 15px black;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 1rem;
+    padding: 10px;
+    align-self: flex-end;
+    border: 0px;
+  }
+
+</style>
+
+<button class="chat-toggle" onclick="toggleChat()">CHAT: ON</button>
+
+<div id="chat">
+  <iframe src="https://minnit.chat/MrDevoooo?embed&bright&nickname=User" style="border:none;width:85%;height:400px;"></iframe></div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+
+<script>
+  function createCookie(name, value, days) {
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      var expires = "; expires=" + date.toGMTString();
+    } else var expires = "";
+    document.cookie = name + "=" + value + expires + "; path=/";
+  }
+
+  function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+  }
+
+  function eraseCookie(name) {
+    createCookie(name, "", -1);
+  }
+
+  var chatOn = readCookie('chatOn')
+  if (chatOn) {
+    chat.style.display = "block";
+    $(".chat-toggle").text("CHAT: ON");
+  }
+
+  var chatOff = readCookie('chatOff')
+  if (chatOff) {
+    chat.style.display = "none";
+    $(".chat-toggle").text("CHAT: OFF");
+    eraseCookie('chatOn');
+  }
+
+
+  function toggleChat() {
+    var chat = document.getElementById("chat");
+    if (chat.style.display === "none") {
+
+      eraseCookie('chatOff');
+
+      chat.style.display = "block";
+      $(".chat-toggle").text("CHAT: ON");
+
+
+
+
+      createCookie('chatOn');
+
+
+    } else {
+
+      eraseCookie('chatOn');
+
+
+      chat.style.display = "none";
+      $(".chat-toggle").text("CHAT: OFF");
+
+
+      createCookie('chatOff');
+
+
+
+
+
+    }
+
+
+
+  }
+
+</script>
+<button onclick="alert(document.cookie);
+    ">cookie</button>
+
       <!--[if lt IE 8]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->  
