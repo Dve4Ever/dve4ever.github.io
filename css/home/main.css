@@ -4194,7 +4194,7 @@ iframe {
   align-self: flex-end;
 }
 
-.dark,
+.dark>*:not(.game-icn),
 .dark * {
   background-color: #0b0b12 !important;
   color: #e1e1ff !important;
