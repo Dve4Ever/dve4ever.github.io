@@ -39,6 +39,5 @@ document.addEventListener('keydown', function(e) {
 
 function activateCheats() {
   alert("cheats activated");
-
-  cookies = 999999999
+  useCheats();
 }
