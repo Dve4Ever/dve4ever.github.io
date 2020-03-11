@@ -39,5 +39,5 @@ document.addEventListener('keydown', function(e) {
 
 function activateCheats() {
   alert("cheats activated");
-  useCheats();
+  buyFactory()
 }
