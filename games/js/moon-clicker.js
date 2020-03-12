@@ -144,7 +144,7 @@ moon.loadFile = function(){
 	 localStorage.setItem('cookies',cookies);
 	 localStorage.setItem('grannies',grannies);
 	};
-	root.setInterval(saveProgress, 1);
+	root.setInterval(saveProgress, 10);
 	root.setInterval(silentProduction, 1000);
 	root.setInterval(alertClear, 5000);
 	updateNumbers();
