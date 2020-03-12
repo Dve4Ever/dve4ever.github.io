@@ -14,7 +14,6 @@ moon.saveFile = function(){
         gMult: gMult,
         bMult: bMult,
         fMult: fMult,
-        grannyParty: grannyParty
     };
     localStorage.setItem('saveFile',JSON.stringify(file));
 };
@@ -31,13 +30,13 @@ moon.loadFile = function(){
     gMult = file.gMult;
     bMult = file.bMult;
     fMult = file.fMult;
-    grannyParty = file.grannyParty;
 };
 
 
 
+  
   root = typeof exports !== "undefined" && exports !== null ? exports : this;
-	cookies = parseInt(localStorage.getItem('cookies')) || 0
+	cookies = parseInt(localStorage.getItem('cookies')) || 0;
 	grannies = parseInt(localStorage.getItem('grannies')) || 0;
 	bakers = parseInt(localStorage.getItem('bakers')) || 0;
 	factories = parseInt(localStorage.getItem('factories')) || 0;
@@ -47,7 +46,7 @@ moon.loadFile = function(){
 	gMult = parseInt(localStorage.getItem('gMult')) || 1;
 	bMult = parseInt(localStorage.getItem('bMult')) || 5;
 	fMult = parseInt(localStorage.getItem('fMult')) || 15;
-  grannyParty = parseInt(localStorage.getItem('grannyParty')) || false;
+	grannyParty = false;
   
   
   
