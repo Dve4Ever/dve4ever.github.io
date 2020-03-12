@@ -60,7 +60,7 @@
     if (cookies >= grannyCost) {
       cookies -= grannyCost;
       grannies += 1;
-      grannyCost *= 1.6;
+      grannyCost *= 1.3;
     } else {
       document.querySelector('#alerts')
         .innerHTML = "Not enough cookies to buy that spaceman! ";
@@ -71,7 +71,7 @@
     if (cookies >= bakerCost) {
       cookies -= bakerCost;
       bakers += 1;
-      bakerCost *= 1.6;
+      bakerCost *= 1.3;
     } else {
       document.querySelector('#alerts')
         .innerHTML = "Not enough cookies to buy that spacecraft! ";
@@ -82,7 +82,7 @@
     if (cookies >= factoryCost) {
       cookies -= factoryCost;
       factories += 1;
-      factoryCost *= 1.6;
+      factoryCost *= 1.3;
     } else {
       document.querySelector('#alerts')
         .innerHTML = "Not enough cookies to buy that rocketship! ";
