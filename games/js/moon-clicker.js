@@ -193,6 +193,7 @@
       localStorage.setItem('astronauts', astronauts);
       localStorage.setItem('spacecraft', spacecraft);
       localStorage.setItem('rocketships', rocketships);
+      localStorage.setItem('workerCost', workerCost);
       localStorage.setItem('astroCost', astroCost);
       localStorage.setItem('spacecraftCost', spacecraftCost);
       localStorage.setItem('rocketCost', rocketCost);
