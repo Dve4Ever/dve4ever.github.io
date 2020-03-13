@@ -144,7 +144,7 @@
     root.updateNumbers = function() {
       var rate;
       rate = workers * wMult + astronauts * aMult + spacecraft * sMult + rocketships * rMult;
-
+			document.title = mCash + " Moon Cash • Moon Clicker v4.16 • Devoooo";
       checkAchievements();
       document.querySelector('.workersC')
         .innerHTML = "Number of Workers: " + workers.toFixed(0);
