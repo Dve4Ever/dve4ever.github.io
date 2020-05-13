@@ -3,9 +3,10 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-image: url('https://i.pinimg.com/originals/22/4f/58/224f589b7410d4a0212f2c66c33e75ee.jpg');
+  background-image: url('https://media.istockphoto.com/photos/starrs-in-outer-space-seamless-background-or-texture-illustration-picture-id1061591684?k=6&m=1061591684&s=170667a&w=0&h=G7IbxBTXEqJy1pzTM4zKzdbnn1QQfPPSUlciEDM3axs=');
   background-size: 150px 150px;
   background-repeat: repeat;
+  backgroound-color: black;
   color: white !important;
   font-family: arial;
 }
