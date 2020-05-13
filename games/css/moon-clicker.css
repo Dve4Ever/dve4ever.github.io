@@ -40,13 +40,12 @@ div .backgroundimg {
   background: url('https://i0.wp.com/freepngimages.com/wp-content/uploads/2016/11/super-moon.png?fit=800%2C800');
   border: 0px;
   background-size: 191px 191px;
-  text-align: center;
   font-family: georgia;
   animation: rotation 20s infinite linear;
   width: 190px;
   height: 190px;
-  text-align: left !important;
-  float: left;
+  display: block !important;
+  text-align: center !important;
   box-shadow: 0px 0px 55px #fff;
   border-radius: 9999px;
 }
