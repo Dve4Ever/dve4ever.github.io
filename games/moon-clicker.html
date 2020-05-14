@@ -1,5 +1,6 @@
 <body>
   <link rel="stylesheet" href="https://staydevoooo.com/games/css/moon-clicker.css">
+
   <div class="backgroundimg">
     <div style="opacity: 0;">
       <p style="color: white;">Moon Clicker™ © <a href="https://staydevoooo.com" style="color: white;">Devoooo</a>, 2016 - Devoooo <span style="align: right; float: right">Other Builds: <a style="color: white;" href="http://jsfiddle.net/MrDevoooo/5uk8d7bs/138/"> JSFiddle</a></span></p>
@@ -8,7 +9,7 @@
       <div style="float: left; width: 33.33%;">
         <div id="column centered">
           <center>
-            <div spellcheck="false" id="factoryName" contentEditable="true" class="header"> Moon Clicker <span style="font-size: 16px">🖉</span></div>
+            <textarea spellcheck="false" id="factoryName" class="header" style="text-align:center;resize:none;overflow:hidden;"> Moon Clicker 🖉</textarea>
             <div class="mCash">$0</div>
             <div class="cookierate">$0.00 per second</div>
           </center>
@@ -16,39 +17,45 @@
         <center><span class="buttonCookie" type="button" onclick="clickyBud()"></span></center>
       </div>
       <div style="float: left; width: 33.33%; align: center;">
-        <center>Acheivements:</center>
+        <center class="header">Acheivements</center>
         <br>
+
         <marquee style="height: 500px;" id="alerts" behavior="scroll" direction="up" scrollamount="2">
           <a href="https://staydevoooo.com" style="color: white;" class="styleAlert">
-            <center>Credits:<br><br>Made by Devoooo<br><br>Tested by CatLoverYT<br><br>Inspired by Cookie Clicker!</center>
+            <center>Credits:<br><br>Made by Devoooo<br><br>$devooooyt<br><br>Inspired by Cookie Clicker!</center>
           </a>
         </marquee>
       </div>
       <div id="backgroundShop" style="float: right; width: 33.33%;">
-        <div id="shop">
+        <center>
           <div id="store" class="header">🛒 Store 🛒</div>
-          <br>
-          <div id="shopItem">
-            <div class="workersC shopText">Workers Here</div>
-            <div class="buttons worker" type="button" onclick="buyWorker()"></div>
+
+          <div id="shop">
+            <br>
+            <div id="shopItem">
+              <div class="workersC shopText">Workers Here</div>
+              <div class="buttons worker" type="button" onclick="buyWorker()"></div>
+            </div>
+            <div id="shopItem">
+              <div class="astronautsC shopText">Astronauts Here</div>
+              <div class="buttons astronauts" type="button" onclick="buyAstronaut()"></div>
+            </div>
+            <div id="shopItem">
+              <div class="spacecraftC shopText">Spacecraft Here</div>
+              <div class="buttons spacecraft" type="button" onclick="buySpacecraft()"></div>
+            </div>
+            <div id="shopItem">
+              <div class="rocketshipC shopText">Rockets Here</div>
+              <div class="buttons rocketships" type="button" onclick="buyRocket()"></div>
+            </div>
           </div>
-          <div id="shopItem">
-            <div class="astronautsC shopText">Astronauts Here</div>
-            <div class="buttons astronauts" type="button" onclick="buyAstronaut()"></div>
-          </div>
-          <div id="shopItem">
-            <div class="spacecraftC shopText">Spacecraft Here</div>
-            <div class="buttons spacecraft" type="button" onclick="buySpacecraft()"></div>
-          </div>
-          <div id="shopItem">
-            <div class="rocketshipC shopText">Rockets Here</div>
-            <div class="buttons rocketships" type="button" onclick="buyRocket()"></div>
-          </div>
-        </div>
+        </center>
       </div>
       <br style="clear: left;" />
     </div>
   </div>
   <script defer src="https://staydevoooo.com/js/home/SHHH.js"></script>
+  <script defer src="https://staydevoooo.com/js/home/vendor/jquery-1.12.0.min.js"></script>
   <script defer src="https://staydevoooo.com/games/js/moon-clicker.js"></script>
+
 </body>
