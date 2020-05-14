@@ -1,3 +1,54 @@
+function nFormatter(num, digits) {
+  var si = [{
+      value: 1,
+      symbol: ""
+    },
+    {
+      value: 1E3,
+      symbol: "k"
+    },
+    {
+      value: 1E6,
+      symbol: "m"
+    },
+    {
+      value: 1E9,
+      symbol: "b"
+    },
+    {
+      value: 1E12,
+      symbol: "t"
+    },
+    {
+      value: 1E15,
+      symbol: "qa"
+    },
+    {
+      value: 1E18,
+      symbol: "qu"
+    },
+    {
+      value: 1E21,
+      symbol: "u"
+    },
+    {
+      value: 1E23,
+      symbol: "de"
+    },
+    {
+      value: 1E26,
+      symbol: " $devooooyt's"
+    }
+  ];
+  var rx = /\.0+$|(\.[0-9]*[1-9])0+$/;
+  var i;
+  for (i = si.length - 1; i > 0; i--) {
+    if (num >= si[i].value) {
+      break;
+    }
+  }
+  return (num / si[i].value).toFixed(2) + si[i].symbol;
+}
 (function() {
   var sMult, spacecraftCost, workers, workerCost, wMult, spacecraft, mCash, rocketships, rMult, aMult, astronauts, astroCost, astroParty, rocketCost, root;
   var moon = {};
@@ -19,6 +70,8 @@
       sMult: sMult,
       rMult: rMult,
     };
+    var ftName = document.getElementById("factoryName").value;
+    localStorage.setItem("factoryName", ftName);
     localStorage.setItem('saveFile', JSON.stringify(file));
   };
 
@@ -37,6 +90,12 @@
     aMult = file.aMult;
     sMult = file.sMult;
     rMult = file.rMult;
+    if (localStorage["factoryName"]) {
+      var fName = localStorage["factoryName"];
+      document.getElementById("factoryName").value = fName;
+    } else {
+      document.getElementById("factoryName");
+    }
   };
 
 
@@ -58,10 +117,8 @@
   astroParty = false;
 
 
-
   root.clickyBud = function() {
     mCash++;
-
     return updateNumbers();
   };
   root.popupReset = function() {
@@ -144,28 +201,28 @@
   root.updateNumbers = function() {
     var rate;
     rate = workers * wMult + astronauts * aMult + spacecraft * sMult + rocketships * rMult;
-    document.title = "$" + mCash + " • Moon Clicker v4.16 • Devoooo";
+    document.title = "$" + nFormatter(mCash) + " • Moon Clicker v4.16 • Devoooo";
     checkAchievements();
     document.querySelector('.workersC')
-      .innerHTML = "Number of Workers: " + workers.toFixed(0);
+      .innerHTML = "" + workers.toFixed(0);
     document.querySelector('.astronautsC')
-      .innerHTML = "Number of Astronaut: " + astronauts.toFixed(0);
+      .innerHTML = "" + astronauts.toFixed(0);
     document.querySelector('.spacecraftC')
-      .innerHTML = "Number of Spacecrafts: " + spacecraft.toFixed(0);
+      .innerHTML = "" + spacecraft.toFixed(0);
     document.querySelector('.rocketshipC')
-      .innerHTML = "Number of Rocketships: " + rocketships.toFixed(0);
+      .innerHTML = "" + rocketships.toFixed(0);
     document.querySelector('.mCash')
-      .innerHTML = "$" + mCash.toFixed(0);
+      .innerHTML = "$" + nFormatter(mCash.toFixed(0));
     document.querySelector('.cookierate')
-      .innerHTML = "$" + rate.toFixed(2) + " per second";
+      .innerHTML = "$" + nFormatter(rate.toFixed(2)) + " per second";
     document.querySelector('.worker')
-      .innerHTML = "🧑🏻 Worker 🧑🏻 <br>$" + workerCost.toFixed(2);
+      .innerHTML = "🧑🏻 Worker 🧑🏻 <br>$" + nFormatter(workerCost.toFixed(2));
     document.querySelector('.astronauts')
-      .innerHTML = "👦🏼 Astronaut 👦🏼 <br>$" + astroCost.toFixed(2);
+      .innerHTML = "👦🏼 Astronaut 👦🏼 <br>$" + nFormatter(astroCost.toFixed(2));
     document.querySelector('.spacecraft')
-      .innerHTML = "🚘 Spacecraft 🚘 <br>$" + spacecraftCost.toFixed(2);
+      .innerHTML = "🚘 Spacecraft 🚘 <br>$" + nFormatter(spacecraftCost.toFixed(2));
     return document.querySelector('.rocketships')
-      .innerHTML = "🚀 Rocketship 🚀 <br>$" + rocketCost.toFixed(2);
+      .innerHTML = "🚀 Rocketship 🚀 <br>$" + nFormatter(rocketCost.toFixed(2));
   };
   root.silentProduction = function() {
     var rate;
