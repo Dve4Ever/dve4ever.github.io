@@ -1,3 +1,14 @@
+      function soundClick() {
+        var audio = document.getElementById("click");
+        audio.play();
+      }
+      
+            function soundBuy() {
+        var audio = document.getElementById("buy");
+        audio.play();
+      }
+      
+      
 function nFormatter(num, digits) {
   var si = [{
       value: 1,
@@ -118,7 +129,9 @@ function nFormatter(num, digits) {
 
 
   root.clickyBud = function() {
-    mCash++;
+    soundClick();
+
+mCash++;
     return updateNumbers();
   };
   root.popupReset = function() {
@@ -147,6 +160,7 @@ function nFormatter(num, digits) {
   };
   root.buyWorker = function() {
     if (mCash >= workerCost) {
+    soundBuy();
       mCash -= workerCost;
       workers += 1;
       workerCost *= 1.2;
@@ -158,6 +172,7 @@ function nFormatter(num, digits) {
   };
   root.buyAstronaut = function() {
     if (mCash >= astroCost) {
+    soundBuy();
       mCash -= astroCost;
       astronauts += 1;
       astroCost *= 1.15;
@@ -169,6 +184,7 @@ function nFormatter(num, digits) {
   };
   root.buySpacecraft = function() {
     if (mCash >= spacecraftCost) {
+    soundBuy();
       mCash -= spacecraftCost;
       spacecraft += 1;
       spacecraftCost *= 1.3;
@@ -180,6 +196,7 @@ function nFormatter(num, digits) {
   };
   root.buyRocket = function() {
     if (mCash >= rocketCost) {
+    soundBuy();
       mCash -= rocketCost;
       rocketships += 1;
       rocketCost *= 1.3;
@@ -192,6 +209,7 @@ function nFormatter(num, digits) {
   root.useCheats = function() {
     if (mCash >= 0) {
       mCash = mCash + 69696969696969;
+      soundBuy();
     } else {
       document.querySelector('#alerts')
         .innerHTML = "Unable to do that... ";
